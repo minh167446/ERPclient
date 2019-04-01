@@ -1,0 +1,91 @@
+<section class="register" id="register">
+  <div class="container">
+    <div class="wrapper-sm">
+      <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title">Tạo tài khoản &amp; công ty</h2>
+              <p class="modal-subtitle">Vui lòng điền đầy đủ thông tin để chúng tôi dễ dàng hỗ trợ bạn cài đặt và sử
+                dụng hệ thống hiệu quả nhất.</p>
+            </div>
+            <div class="modal-body">
+              <div class="box">
+                <div class="content registerBox" style="">
+                  <form id="signup-modal" role="form"> <input type="hidden" name="faccesscode" id="faccesscode"
+                      value="">
+                    <p class="sm-success"><i class="icon icon_check_alt2"></i> <strong>Chúc mừng bạn, tài khoản của bạn
+                        đã được tạo. Thông tin tài khoản đăng nhập đã được gửi đến địa chỉ email của
+                        bạn.</strong><br><br></p>
+                    <p class="sm-failed" id="sm-failed" style="margin-bottom:20px;"><i
+                        class="icon icon_close_alt2"></i>&nbsp;<strong></strong></p>
+                    <table width="100%" style="border-spacing: 0;">
+                      <tbody>
+                        <tr>
+                          <td align="right">
+                            <div style="margin-top: -13px; padding-right:10px;">Họ tên</div>
+                          </td>
+                          <td><input id="sm-fullname" class="form-control input-lg" type="text" placeholder=""
+                              name="sm-fullname" required=""></td>
+                        </tr>
+                        <tr>
+                          <td align="right">
+                            <div style="margin-top: -13px; padding-right:10px;">Email</div>
+                          </td>
+                          <td><input id="sm-email" class="form-control input-lg" type="text" name="sm-email"
+                              required=""></td>
+                        </tr>
+                        <tr>
+                          <td align="right">
+                            <div style="margin-top: -13px; padding-right:10px;">Điện thoại</div>
+                          </td>
+                          <td><input id="sm-phone" class="form-control input-lg" type="text" placeholder=""
+                              name="sm-phone" required=""></td>
+                        </tr>
+                        <tr height="20">
+                          <td colspan="2" style="border-top: 1px solid #e5e5e5;margin-bottom:20px;"></td>
+                        </tr>
+                        <tr>
+                          <td align="right">
+                            <div style="margin-top: -13px; padding-right:10px;">Tên công ty</div>
+                          </td>
+                          <td><input id="sm-companyname" class="form-control input-lg" type="text" placeholder=""
+                              name="sm-companyname" required=""></td>
+                        </tr>
+                        <tr>
+                          <td align="right">
+                            <div style="margin-top: -13px; padding-right:10px;">Lĩnh vực KD</div>
+                          </td>
+                          <td> <select id="sm-companyindustry" class="form-control">
+                              <option value="1">Thời trang</option>
+                              <option value="2">Siêu thị</option>
+                              <option value="3">Thiết bị điện tử</option>
+                              <option value="4">Ẩm thực</option>
+                              <option value="5">Khách sạn</option>
+                              <option value="6">Chăm sóc sức khỏe</option>
+                              <option value="7">Dịch vụ khác</option>
+                            </select> </td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td align="left"> <button class="btn btn-color">Hoàn thành</button> </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer" style="text-align: center;">
+              <div class="forgot login-footer" style="display: none;"> <span>Bạn chưa có tài khoản? <a
+                    href="javascript: showRegisterForm();">Đăng ký.</a> </span> </div>
+              <div class="forgot register-footer" style=""> <span>Bạn đã có tài khoản?</span> <a
+                  href="https://app.basecrop.com">Đăng nhập</a> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
