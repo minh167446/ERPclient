@@ -1,14 +1,46 @@
-<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>ERPclient</title>
-  <base href="/">
+    <title>Phần mềm quản lý nhân sự - HRM Cloud</title>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, viewport-fit=cover" />
+
+    <meta charset="UTF-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="Content-Security-Policy" content="default-src * blob: gap://ready file://*; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'; img-src * data: 'unsafe-inline' blob:; connect-src * blob: 'unsafe-inline'; frame-src * data: blob: gap://ready 'unsafe-inline'; font-src * data:; media-src * blob:; object-src 'self' data: blob: *" />
+
+    <meta name="theme-color" content="#3498db" />
+    <link rel="stylesheet" href="./assets/css/commons.css">
+    <script src="./assets/js/commons.js"></script>
 </head>
 <body>
-  <app-root></app-root>
+ 
+
+<script src="./assets/js/main-built.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125088340-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-125088340-2');
+</script>
+
+
+<app-root></app-root>
+
+
+<script>
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js?v=3').then(function(registration) {
+        // Registration was successful
+        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+    }).catch(function(err) {
+        // registration failed :(
+        // console.log('ServiceWorker registration failed: ', err);
+    });
+}
+</script>
 </body>
 </html>
