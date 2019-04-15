@@ -15,10 +15,10 @@ export class DepartmentComponent implements OnInit {
     try {
       const data = await this.http.get(
         'http://localhost:3000/api/departments'
-      ).subscribe( 
-        res=>this.departments=res
+      ).subscribe(
+        res=>this.departments = res
     );
-      // data['success'] ? (this.departments = data['departments']) : this.data.error(data['message']); 
+      // data['success'] ? (this.departments = data['departments']) : this.data.error(data['message']);
     } catch (error) {
       this.data.error(error['message']);
     }

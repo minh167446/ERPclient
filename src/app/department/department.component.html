@@ -7,8 +7,7 @@
       <li><a href="#" class="active"><span>Tất cả</span><span class="number">4</span></a></li><span></span>
     </ul>
     <div class="pull-right">
-      <div class="pull-right headingbuttons"><span></span><span></span><a href="add_department"
-          class="mainbutton"><i class="icon tc-plus-circle"></i><span class="hideonsmall">Tạo phòng
+      <div class="pull-right headingbuttons"><span></span><span></span><a href="add_department" class="mainbutton"><i class="icon tc-plus-circle"></i><span class="hideonsmall">Tạo phòng
             ban</span></a></div><span></span>
     </div>
   </div>
@@ -22,13 +21,27 @@
         <div class="fields">
           <div class="field four wide" id="companydepartment-wrapper">
             <ul class="dep">
-              <li *ngFor="let department of departments?.docs" class="dep departmentrow" id="departmentrowid-{{ department._id }}">
-                <span data-id="{{ department._id }}"><a href="/department/{{ department._id }}" class="dropdown-toggle" data-toggle="dropdown">
-                    <span class="icon tc-folder">{{ department.title }}
-                      ({{ department.employees.length }})
+              <li *ngFor="let department of departments?.docs" class="dep departmentrow" id="departmentrowid-{{ department?._id }}">
+                <span data-id="{{ department?._id }}">
+                  <a href="/department/{{ department?._id }}" class="dropdown-toggle" data-toggle="dropdown">
+                    <span class="icon tc-folder">
+                      {{ department?.title }}
+                      ({{department?.childs.length}})
                     </span>
                   </a>
                 </span>
+                <ul class="dep">
+                  <li *ngFor="let item of department?.childs" class="dep departmentrow" id="departmentrowid-6120" title=" » nhóm phát triển">
+                    <span data-id="6120">
+                      <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
+                        <span class="icon tc-folder">
+                          {{item.title}}
+                        </span>
+                      </a>
+                    </span>
+                    </li>
+                </ul>
+
               </li>
             </ul>
           </div>
@@ -37,26 +50,3 @@
     </div>
   </form>
 </div>
-
-
-<!-- <ul class="dep">
-                  <li class="dep departmentrow" id="departmentrowid-6120" title=" » nhóm phát triển"><span
-                      data-id="6120"><a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown"><span
-                          class="icon tc-folder">&nbsp;#6120. nhóm phát
-                          triển (0)</span></a></span>
-                    <ul class="dep"></ul>
-                  </li>
-                  <li class="dep departmentrow" id="departmentrowid-6121" title=" » nhóm triển khai"><span
-                      data-id="6121"><a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown"><span
-                          class="icon tc-folder">&nbsp;#6121. nhóm triển
-                          khai (0)</span></a></span>
-                    <ul class="dep">
-                      <li class="dep departmentrow" id="departmentrowid-6122" title=" » BRICK"><span data-id="6122"><a
-                            href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown"><span
-                              class="icon tc-folder">&nbsp;#6122.
-                              BRICK (0)</span></a></span>
-                        <ul class="dep"></ul>
-                      </li>
-                    </ul>
-                  </li>
-                </ul> -->

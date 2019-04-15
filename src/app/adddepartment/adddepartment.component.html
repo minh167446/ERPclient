@@ -16,7 +16,7 @@
   <div style="clear:both;"></div>
 </div>
 <div class="ui segment" id="loadtable" style="display: block;">
-  <form class="ui form"  autocomplete="on" [formGroup]="myForm" (ngSubmit)="onSubmit()">
+  <form class="ui form"  autocomplete="on" [formGroup]="myForm" (ngSubmit)="onSubmit()" id="add-depart-form">
     <div class="field required">
       <label>Tên PB</label>
       <mat-form-field>
@@ -35,17 +35,14 @@
         <input matInput  formControlName="location" name="location" placeholder="Input">
       </mat-form-field>
     </div>
-    <!-- <div class="field wide" >
+    <input type="submit" name="" value="Tao phong ban">
+    <div class="field wide" >
     <label >Thuộc phòng ban</label>
     <mat-form-field>
-        <mat-select  placeholder="Transaction Type" (change)="selected($event)" [(ngModel)]="parentDepartment" formControlName="TransactionTypeID"> 
+        <mat-select  placeholder="Transaction Type" formControlName="parent_id">
           <mat-option *ngFor="let department of departments?.docs" value="{{ department?._id }}">{{ department?.title }}</mat-option>
         </mat-select>
       </mat-form-field>
-  </div> -->
+  </div>
   </form>
-</div>
-<div class="actions">
-  <div class="ui noborder basic approve button">Đóng</div>
-  <div class="ui button teal">Tạo phòng ban</div>
 </div>
