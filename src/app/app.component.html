@@ -1,70 +1,203 @@
-<div class='loader' id="initpageloader" style="position:fixed;top: 100px; width: 100%; text-align: center;">
-  <div style="width: 280px; margin: auto; padding: 20px;">
-    <div style="margin-bottom:10px;">Loading...</div>
-    <div style="margin:auto;width:240px;height:14px;border:1px solid #3498db;border-radius:20px;">
-      <div
-        style="width: 5%; background: #3498db url('../imgs/progressbar.gif'); border-radius:20px; height: 12px; opacity: 0.7; font-size: 10px; color: #000; line-height: 12px;">
+<div id="header" style="display: block !important;" class="transition visible">
+  <div id="headerwrapper" class="box1200">
+    <div class="pull-left hamburger"><a href="#"><i class="icon tc-hamburger"></i></a></div>
+    <div class="pull-right" id="headerrightnav">
+      <div id="navprofile" class="ui top right pointing dropdown" tabindex="0">
+        <div class="text" id="headerfullname"><img src="imgs/avatar.png"><span>nguyen tuan</span></div><i
+          class="dropdown icon"></i>
+        <div class="menu" tabindex="-1">
+          <div class="item" style="display:none !important;"><a href="">Tiếng Việt</a></div>
+          <div class="item" style="display:none !important;"><a href="">Tiếng Anh</a></div>
+          <div class="item"><a href="javascript:void(0)">Chỉnh sửa
+              thông tin</a></div>
+          <div class="divider"></div>
+          <div class="item"><a href="javascript:void(0)">Thoát</a>
+          </div>
+        </div>
+      </div>
+      <div id="navnotification" class="ui top right pointing dropdown" tabindex="0"><a class="toggler" href="#"><i
+            class="icon tc-bell"></i><span class="badge hide" style="display: none;">0</span></a>
+        <div></div>
+        <div class="menu" tabindex="-1"></div>
+      </div>
+      <div id="navheadingtoggle"><a class="toggle" href="#"><i class="icon tc-more"></i></a></div>
+    </div>
+    <div class="pull-left" id="viewtitle"><a href="#"></a></div>
+    <div class="navmenu">
+      <div class="navmenuinside">
+        <ul>
+          <li><a class="headermenu activeinit" href="#" id="headercompanyname" title="Phiên bản phần mềm 1.8"><small
+                class="versionbadge"><span>v</span><span>1.8</span></small><span>reyey</span></a>
+          </li>
+          <li><a class="headermenu" href="#checkin"><span>Chấm công</span></a></li>
+          <li><a class="headermenu" href="#mail"><span>Hộp thư</span></a></li>
+          <li><a class="headermenu" href="#project"><span>Dự án</span></a></li>
+          <li><a class="headermenu" href="#blog"><span>Blog</span></a></li>
+          <li><a class="headermenu" href="#elearning"><span>Học trực tuyến</span></a></li>
+          <li><a class="headermenu" href="employee"><span>Nhân viên</span></a></li>
+          <li id="headermenu_profile" style="display:none;"><a class="headermenu" href="#account"><span>Tài
+                khoản</span></a></li>
+          <li><a title="Thông báo này sẽ mất khi nâng cấp lên tài khoản trả phí" href="#" style="color:#ff0;">Dùng thử
+              (13 ngày)</a></li>
+        </ul>
+      </div>
+    </div>
+    <div></div>
+    <div>
+      <div class="onboardwrapper">
+        <div class="onboardtoggler" id="onboardtoggler" style=""><span><span>Đã hoàn thành</span><span>:
+            </span><span>1</span><span> / </span><span>8</span><span> </span><span>bước</span></span>
+          <div class="ui tiny green progress active" data-value="1" data-total="8" data-percent="13">
+            <div class="bar" style="transition-duration: 300ms; width: 13%;"></div>
+          </div>
+        </div>
+        <div class="onboardcontent" style="display: none;">
+          <h3><span>BẮT ĐẦU VỚI BASECROP</span><a href="" class="pull-right"><i class="icon tc-minus"></i></a>
+          </h3>
+          <p class="tip" style="display:;">Hướng dẫn này sẽ giúp bạn hiểu hơn về cách dùng phần
+            mềm &amp; các tính năng chính của ứng dụng.</p>
+          <div class="ui tiny green progress active" data-value="1" data-total="8" data-percent="13">
+            <div class="bar" style="transition-duration: 300ms; width: 13%;"></div>
+          </div>
+          <div class="onboardchecklist ui list">
+            <div class="item onboardstepchecked"><i class="icon tc-tick"></i>
+              <div class="content">
+                <div class="description"><a href="#">1. Tạo
+                    tài khoản &amp; công ty</a></div>
+              </div>
+            </div>
+            <div class="item "><i class="icon tc-checkboxsquareempty"></i>
+              <div class="content">
+                <div class="description"><a href="#"><span>2</span><span>. </span><span>Khởi tạo
+                      dữ liệu cơ bản</span></a></div>
+              </div>
+            </div>
+            <div class="item  disabled"><i class="icon tc-checkboxsquareempty"></i>
+              <div class="content">
+                <div class="description"><a href="#"><span>3</span><span>. </span><span>Tạo thêm
+                      1 nhân viên và phân quyền</span></a></div>
+              </div>
+            </div>
+            <div class="item  disabled"><i class="icon tc-checkboxsquareempty"></i>
+              <div class="content">
+                <div class="description"><a href="#"><span>4</span><span>. </span><span>Tạo 1 thư
+                      mục và tải lên 1 tài liệu</span></a></div>
+              </div>
+            </div>
+            <div class="item  disabled"><i class="icon tc-checkboxsquareempty"></i>
+              <div class="content">
+                <div class="description"><a href="#"><span>5</span><span>. </span><span>Tạo một
+                      chấm công vào làm việc</span></a></div>
+              </div>
+            </div>
+            <div class="item  disabled"><i class="icon tc-checkboxsquareempty"></i>
+              <div class="content">
+                <div class="description"><a href="#"><span>6</span><span>. </span><span>Tạo 1 dự
+                      án và có 1 công việc</span></a></div>
+              </div>
+            </div>
+            <div class="item  disabled"><i class="icon tc-checkboxsquareempty"></i>
+              <div class="content">
+                <div class="description"><a href="#"><span>7</span><span>. </span><span>Gửi 1 thư
+                      nội bộ cho nhân viên</span></a></div>
+              </div>
+            </div>
+            <div class="item  disabled"><i class="icon tc-checkboxsquareempty"></i>
+              <div class="content">
+                <div class="description"><a href="#"><span>8</span><span>. </span><span>Chấm điểm
+                      cho 1 nhân viên</span></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div></div>
       </div>
     </div>
   </div>
 </div>
 
-<div id="header"></div>
 
-<div id="body" style="position: relative;" class="box1200">
-  <div id="sidebar"></div>
-  <div id="container"></div>
+<div id="body" style="position: relative;display: block !important;" class="box1200 transition visible nosidebar">
+  <div id="sidebar" style="display: none;">
+    <div id="sidebarwrapper" class="lite box1200" >
+      <ul id="sidebar_" class="sidebargroup ui">
+        <li id="sidebar_#"><a title="Dashboard" class="title" data-roles="" href="#" ><i
+              class="icon tc-home"></i><span>Dashboard</span></a></li>
+        <li id="sidebar_#file"><a title="Tài liệu công ty" class="title" data-roles="" href="#file"
+            ><i class="icon tc-folder"></i><span>Tài liệu công ty</span></a></li>
+        <li id="sidebar_#setting_menu/id/other"><a title="Cài đặt và cấu hình" class="title" data-roles="231,233"
+            href="#setting/menu/id/other" ><i class="icon tc-gear"></i><span>Cài đặt và cấu
+              hình</span></a></li>
+        <li id="sidebar_#support"><a title="Liên hệ &amp; trợ giúp" class="title" data-roles="" href="#support"
+            ><i class="icon tc-question"></i><span>Liên hệ &amp; trợ giúp</span></a></li>
+      </ul>
+      <ul id="sidebar_mail" class="sidebargroup ui">
+        <li id="sidebar_#mail"><a title="Hộp thư đến" class="title" data-roles="" href="#mail" ><i
+              class="icon tc-mail"></i><span>Hộp thư đến</span></a></li>
+        <li id="sidebar_#mail_index/mailbox/insent"><a title="Đã gửi" class="title" data-roles=""
+            href="#mail/index/mailbox/insent" ><i class="icon tc-arrowleft"></i><span>Đã gửi</span></a>
+        </li>
+        <li id="sidebar_#mail_add"><a title="Soạn thư mới" class="title" data-roles="" href="#mail/add"
+            ><i class="icon tc-compose"></i><span>Soạn thư mới</span></a></li>
+      </ul>
+      <ul id="sidebar_blog" class="sidebargroup ui">
+        <li id="sidebar_#blog"><a title="Blog công ty" class="title" data-roles="" href="#blog" ><i
+              class="icon tc-book"></i><span>Blog công ty</span></a></li>
+        <li id="sidebar_#blog_manage"><a title="Quản lý blog" class="title" data-roles="320" href="#blog/manage"
+            ><i class="icon tc-list"></i><span>Quản lý blog</span></a></li>
+        <li id="sidebar_#blog_add"><a title="Viết blog mới" class="title" data-roles="320" href="#blog/add"
+            ><i class="icon tc-compose"></i><span>Viết blog mới</span></a></li>
+      </ul>
+      <ul id="sidebar_project" class="sidebargroup ui">
+        <li id="sidebar_#project"><a title="Danh sách dự án" class="title" data-roles="" href="#project"
+            ><i class="icon tc-briefcase"></i><span>Danh sách dự án</span></a></li>
+        <li id="sidebar_#project_add"><a title="Tạo dự án mới" class="title" data-roles="266" href="#project/add"
+            ><i class="icon tc-plus-circle"></i><span>Tạo dự án mới</span></a></li>
+      </ul>
+      <ul id="sidebar_elearning" class="sidebargroup ui">
+        <li id="sidebar_#elearning"><a title="Tất cả khóa học" class="title" data-roles="" href="#elearning"
+            ><i class="icon tc-book"></i><span>Tất cả khóa học</span></a></li>
+        <li id="sidebar_#elearning_enroll"><a title="Khóa học của tôi" class="title" data-roles=""
+            href="#elearning/enroll" ><i class="icon tc-badge"></i><span>Khóa học của
+              tôi</span></a></li>
+      </ul>
+      <ul id="sidebar_employee" class="sidebargroup ui">
+        <li id="sidebar_#employee"><a title="Nhân viên" class="title" data-roles="" href="#employee" ><i
+              class="icon tc-users"></i><span>Nhân viên</span></a></li>
+        <li id="sidebar_#salary"><a title="Phiếu lương" class="title" data-roles="" href="#salary"
+            ><i class="icon tc-tag"></i><span>Phiếu lương</span></a></li>
+        <li id="sidebar_#hrmleave"><a title="Xin nghỉ phép" class="title" data-roles="" href="#hrmleave"
+            ><i class="icon tc-belloff"></i><span>Xin nghỉ phép</span></a></li>
+        <li id="sidebar_#employeepoint"><a title="Chấm điểm nhân viên" class="title" data-roles="" href="#employeepoint"
+            ><i class="icon tc-starfill"></i><span>Chấm điểm nhân viên</span></a></li>
+      </ul>
+      <ul id="sidebar_checkin" class="sidebargroup ui">
+        <li id="sidebar_#checkin_add"><a title="Chấm công" class="title" data-roles="" href="#checkin/add"
+            ><i class="icon tc-plus-circle"></i><span>Chấm công</span></a></li>
+        <li id="sidebar_#checkin"><a title="Lịch sử chấm công" class="title" data-roles="" href="#checkin"
+            ><i class="icon tc-history"></i><span>Lịch sử chấm công</span></a></li>
+        <li id="sidebar_#workschedule_detail/_s/user_id/26763"><a title="Lịch làm việc" class="title" data-roles=""
+            href="#workschedule/detail/_s/user_id/26763" ><i
+              class="icon tc-calendar-alt"></i><span>Lịch làm việc</span></a></li>
+        <li id="sidebar_#checkin_report"><a title="Báo cáo giờ công" class="title" data-roles="263"
+            href="#checkin/report" ><i class="icon tc-barchart"></i><span>Báo cáo giờ
+              công</span></a></li>
+      </ul>
+      <ul id="sidebar_account" class="sidebargroup ui">
+        <li id="sidebar_#profile"><a title="Cập nhật tài khoản" class="title" data-roles="" href="#profile"
+            ><i class="icon tc-user"></i><span>Cập nhật tài khoản</span></a></li>
+        <li id="sidebar_#user_logout"><a title="Thoát" class="title" data-roles="" href="#user/logout" ><i
+              class="icon tc-turnoff"></i><span>Thoát</span></a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="container">
+    <div class="ui segments" >
+       <router-outlet></router-outlet>
+      <div ></div>
+    </div>
+  </div>
   <div id="body-loader" class="tc-loader ui inverted dimmer">
     <div class="ui large text loader">Loading...</div>
   </div>
 </div>
-<div id="settingpagemenu" class="hide"></div>
-<div id="loginbox">
-  <div data-reactid=".b">
-    <div id="logindialog"
-      style="position: absolute; top: 0px; width: 100%; z-index: 1001;  margin-top: 284px;display: block !important;"
-      data-reactid=".b.0" class="transition visible">
-      <div class="ui stackable four column grid" data-reactid=".b.0.0">
-        <div class="column centered four wide" id="logininner" data-reactid=".b.0.0.0">
-          <h1 style="text-align:center;margin-bottom:1em;" data-reactid=".b.0.0.0.0"><img src="imgs/logo/basecrop.png"
-              width="240" data-reactid=".b.0.0.0.0.0"></h1>
-          <div class="ui hidden small error message" data-reactid=".b.0.0.0.1">
-            <div class="header" data-reactid=".b.0.0.0.1.0">Lỗi</div>
-            <p data-reactid=".b.0.0.0.1.1"></p>
-          </div>
-          <form class="ui form" data-reactid=".b.0.0.0.2">
-            <div class="field required" data-reactid=".b.0.0.0.2.0"><label data-reactid=".b.0.0.0.2.0.0">Email / Mã nhân
-                viên</label><input type="text" id="email" data-reactid=".b.0.0.0.2.0.1"></div>
-            <div class="field required" data-reactid=".b.0.0.0.2.1"><label data-reactid=".b.0.0.0.2.1.0">Mật
-                khẩu</label><input type="password" id="password" data-reactid=".b.0.0.0.2.1.1"></div><button
-              class="ui button teal" type="submit" data-reactid=".b.0.0.0.2.2">Đăng nhập</button><a
-              href="#user/forgotpass" class="ui floated right pull-right" style="padding-top:0.6em;"
-              data-reactid=".b.0.0.0.2.3">Quên mật khẩu?</a>
-            <div class="ui divider" data-reactid=".b.0.0.0.2.4"></div>
-            <div data-reactid=".b.0.0.0.2.5"><a href="https://www.basecrop.com/tao-tai-khoan" class="nocolor"
-                style="color:#777;" title="Tạo công ty của bạn" data-reactid=".b.0.0.0.2.5.0"><small
-                  data-reactid=".b.0.0.0.2.5.0.0"><span data-reactid=".b.0.0.0.2.5.0.0.0">« </span><span
-                    data-reactid=".b.0.0.0.2.5.0.0.1">Tạo công ty</span></small></a></div>
-          </form>
-          <div class="ui relaxed divided list" data-reactid=".b.0.0.0.3"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div id="reloginbox"></div>
-<div id="companyinitbox"></div>
-<div id="registerbox"></div>
-<div id="forgotpassbox"></div>
-<div id="tcbeeper"></div>
-<div id="filepreview"></div>
-<div id="actionsheetwrapper"></div>
-<div id="notifywidgetexternal"></div>
-<div id="appstartloader"></div>
-<div id="globalloadindicator"></div>
-
-
-<audio id="notificationAudio">
-  <source src="files/notify.ogg" type="audio/ogg">
-  <source src="files/notify.mp3" type="audio/mpeg">
-  <source src="files/notify.wav" type="audio/wav"></audio>

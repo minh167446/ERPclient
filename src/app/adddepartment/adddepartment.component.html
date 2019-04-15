@@ -1,0 +1,51 @@
+<div>
+  <div class="heading nopagination">
+    <div class="pull-left ui breadcrumb large"><a href="#setting/menu/id/other" class="section active">Cài đặt nhân
+        sự</a><i class="right tc-right icon divider"></i><a href="#department" class="section"><span>Phòng
+          ban</span><span> </span><span></span></a><span></span><span></span></div>
+    <ul class="headingtabs">
+      <li><a href="#" class="active"><span>Tất cả</span><span class="number">4</span></a></li><span></span>
+    </ul>
+    <div class="pull-right">
+      <div class="pull-right headingbuttons"><span></span><span></span><a href="add_department" class="mainbutton"><i
+            class="icon tc-plus-circle"></i><span class="hideonsmall">Tạo phòng
+            ban</span></a></div><span></span>
+    </div>
+  </div>
+  <div class="tcquerytaglist"></div>
+  <div style="clear:both;"></div>
+</div>
+<div class="ui segment" id="loadtable" style="display: block;">
+  <form class="ui form"  autocomplete="on" [formGroup]="myForm" (ngSubmit)="onSubmit()">
+    <div class="field required">
+      <label>Tên PB</label>
+      <mat-form-field>
+        <input matInput  formControlName="title" name="title" placeholder="Input">
+      </mat-form-field>
+    </div>
+    <div class="field required">
+      <label>Mô tả PB</label>
+      <mat-form-field>
+        <textarea matInput  formControlName="description" name="description" placeholder="Textarea"></textarea>
+      </mat-form-field>
+    </div>
+    <div class="field required">
+      <label>Địa chỉ</label>
+      <mat-form-field>
+        <input matInput  formControlName="location" name="location" placeholder="Input">
+      </mat-form-field>
+    </div>
+    <!-- <div class="field wide" >
+    <label >Thuộc phòng ban</label>
+    <mat-form-field>
+        <mat-select  placeholder="Transaction Type" (change)="selected($event)" [(ngModel)]="parentDepartment" formControlName="TransactionTypeID"> 
+          <mat-option *ngFor="let department of departments?.docs" value="{{ department?._id }}">{{ department?.title }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+  </div> -->
+  </form>
+</div>
+<div class="actions">
+  <div class="ui noborder basic approve button">Đóng</div>
+  <div class="ui button teal">Tạo phòng ban</div>
+</div>

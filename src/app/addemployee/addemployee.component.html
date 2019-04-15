@@ -1,0 +1,156 @@
+<div class="ui segments" >
+  <div class="heading nopagination" style="margin-bottom:25px;" >
+    <div class="pull-left ui breadcrumb large" ><span ></span><span
+        ></span><a href="#employee" class="section active" ><span
+          >Nhân viên</span><span > </span><span
+          ></span></a><span ></span><span
+        ></span></div>
+    <ul class="headingtabs" >
+      <li ><a href="#" class="active" ><span
+            >Thêm mới</span><span ></span></a></li>
+    </ul>
+    <div style="clear:right;" ></div>
+  </div>
+  <div class="ui segment" >
+    <form class="ui form" autocomplete="on" [formGroup]="myForm" (ngSubmit)="onSubmit()">
+      <div class="fields" >
+        <div class="field four wide hideonsmall" >
+          <h4 ><strong >Thông tin cá nhân</strong></h4>
+          <p ></p>
+        </div>
+        <div class="field twelve wide" >
+          <div class="fields" >
+            <div class="field wide required four" ><label
+                >Họ tên</label>
+      <mat-form-field>
+        <input matInput  formControlName="fullname" name="title" placeholder="Input">
+      </mat-form-field>
+            </div>
+          </div>
+          <div class="fields" >
+            <div class="required four wide field" ><label
+                >Email</label>
+      <mat-form-field>
+        <input matInput  formControlName="workEmail" name="email" placeholder="Input">
+      </mat-form-field>
+              <div style="line-height:1.2;margin-top:5px;color:red;font-size:11px;" >
+                Email phải hoạt động. Mật khẩu sẽ được gửi vào địa chỉ email này.</div>
+            </div>
+            <div class=" four  wide field" ><label >Điện
+                thoại</label>      <mat-form-field>
+                    <input matInput  formControlName="workPhone" name="phone" placeholder="Input">
+                  </mat-form-field></div>
+          </div>
+        </div>
+      </div>
+      <div class="ui divider" ></div>
+      <div class="fields" >
+        <div class="field four wide hideonsmall" >
+          <h4 ><strong >Thông tin nhân viên</strong></h4>
+          <p >Thông tin chi tiết nhân viên</p>
+        </div>
+        <div class="field twelve wide" >
+          <div class="fields" >
+              <label > Trụ sở</label>
+              <mat-form-field>
+                  <mat-select formControlName="workLocation" placeholder="Văn phòng làm việc">
+                    <mat-option value="TP hcm">hcm</mat-option>
+                    <mat-option value="TP hnoi">hanoi</mat-option>
+                  </mat-select>
+                </mat-form-field>
+            <div class=" four wide field" ><label >Loại hình
+                công việc</label>
+                <mat-form-field>
+                    <mat-select formControlName="jobType" placeholder="Văn phòng làm việc">
+                      <mat-option value="Nhân viên chính thức">Nhân viên chính thức</mat-option>
+                      <mat-option value="Bán thời gian">Bán thời gian</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                <!-- <div class="ui undefined search selection dropdown" ><input type="hidden"
+                  name="status" ><i class="dropdown icon"
+                  ></i><input class="search" autocomplete="off" tabindex="0">
+                <div class="default text" >-----</div>
+                <div class="menu"  tabindex="-1">
+                  <div class="item" data-value="0" >Nhân viên chính thức</div>
+                  <div class="item" data-value="1" >Bán thời gian</div>
+                  <div class="item" data-value="3" >Thử việc</div>
+                  <div class="item" data-value="5" >Làm thêm ngoài giờ</div>
+                  <div class="item" data-value="7" >Nhân viên thời vụ</div>
+                  <div class="item" data-value="9" >Làm dự án</div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+          <div class="fields" >
+            <div class="four wide field">
+              <label >Phòng
+                ban</label>
+                    <!-- <mat-card-content>
+                        <section class="example-section">
+                            <mat-checkbox class="example-margin" *ngFor="let department of departments" [(ngModel)]="checked">{{ department.title }}</mat-checkbox>
+                          </section>
+                    </mat-card-content> -->
+
+                    <mat-checkbox *ngFor="let department of departments?.docs" [(ngModel)]="department?.checked"> 
+                        <label>{{ department?.title }}</label> 
+                      </mat-checkbox>
+            </div>
+            <div class="four wide field" ><label >Cấp
+                bậc</label>
+              <div class="ui undefined search selection dropdown" ><input type="hidden"
+                  name="status" ><i class="dropdown icon"
+                  ></i><input class="search" autocomplete="off" tabindex="0">
+                <div class="default text" >-----</div>
+                <div class="menu"  tabindex="-1">
+                  <div class="item" data-value="100" >Mới tốt nghiệp / Thực tập
+                  </div>
+                  <div class="item" data-value="0" >Nhân viên</div>
+                  <div class="item" data-value="60" >Trưởng nhóm / Giám sát</div>
+                  <div class="item" data-value="50" >Phó phòng</div>
+                  <div class="item" data-value="51" >Trợ lý quản lý cửa hàng</div>
+                  <div class="item" data-value="10" >Trưởng phòng</div>
+                  <div class="item" data-value="11" >Quản lý cửa hàng</div>
+                  <div class="item" data-value="7" >Phó giám đốc</div>
+                  <div class="item" data-value="5" >Giám đốc</div>
+                  <div class="item" data-value="4" >Giám đốc điều hành</div>
+                  <div class="item" data-value="2" >Phó chủ tịch</div>
+                  <div class="item" data-value="1" >Chủ tịch</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fields" >
+            <div class="four wide field" ><label ><span
+                  >ID Nội bộ</span><a class="icon tc-info"
+                  title="Nếu công ty của bạn / nhóm đang chạy (hoặc có) một hệ thống để quản lý tất cả các tài khoản, trường này sẽ lưu trữ ID người dùng của hệ thống hiện tại của bạn. (Cho phép A-Z, 0-9 ký tự). Vídụ: E16217, CE40128 ..."
+                  ></a></label>
+              <div class="ui right labeled input" ><input name="internalid" type="text"
+                  >
+                <div class="ui grey label" >@reyey9</div>
+              </div>
+            </div>
+            <div class="required four  wide field" ><label
+                >Chức vụ</label><input name="jobtitle" type="text" value=""
+                ></div>
+          </div>
+          <div class="fields" >
+            <div class=" three   field" ><label >Không giới
+                hạn IP khi chấm công</label>
+              <div class="ui toggle checkbox" ><input type="checkbox" name="public"
+                  checked=""  tabindex="0" class="hidden"><label
+                  >&nbsp;</label></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fields fieldaction" >
+        <div class="field wide hideonsmall four" >
+          <p class="requirebox" ><span >* : </span><span
+              >Bắt buộc</span></p>
+        </div>
+        <div class="field wide twelve" ><button class="ui teal button" type="submit"
+            >Thêm</button></div>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,292 @@
+<div id="page" >
+  <div >
+    <div class="heading" >
+      <div class="pull-left ui breadcrumb large" ><span
+          ></span><span ></span><a href="#employee"
+          class="section" ><span >Nhân viên</span><span
+            > </span><span ></span></a><span
+          ></span><span ></span></div>
+      <ul class="headingtabs" >
+        <li ><a href="#" class="active" ><span
+              >Tất cả</span><span class="number"
+              >1</span></a></li>
+        <li class="filtertogglewrapper " ><a href="#" class="filtertoggle"
+            title="Bật / Tắt chức năng tìm kiếm" ><span class="hideonsmall"
+              >Bộ lọc &amp; tìm kiếm...</span><i class="icon tc-search onlyonsmall"
+              ></i></a></li>
+      </ul>
+      <div class="pull-right" >
+        <div class="pull-right headingbuttons" ><span
+            ></span><span ></span><a href="add_employee"
+            class="mainbutton" ><i class="icon tc-plus-circle"
+              ></i><span class="hideonsmall" >Thêm
+              nhân viên mới</span></a><a href="add_employee" class="mytip_onpage hideonsmall"
+            ><i class="icon tc-upload" ></i><span
+              class="hideonsmall" >Import</span></a>
+          <div class="ui pointing top right dropdown"  tabindex="0"><span class="text"
+              ></span>
+            <div class="menu"  tabindex="-1"><a href="#employee/import" class="item"
+                title="Import danh sách nhân viên" ><i class="icon tc-upload"
+                  ></i><span >Import danh sách
+                  nhân viên</span></a><a href="#employeemore/import" class="item" title="Import sơ yếu lý lịch"
+                ><i class="icon tc-upload"
+                  ></i><span >Import sơ yếu lý
+                  lịch</span></a><a href="#employee/importoffice" class="item" title="Import chuyển công tác"
+                ><i class="icon tc-upload"
+                  ></i><span >Import chuyển
+                  công tác</span></a></div>
+          </div>
+        </div>
+        <div class="paginationwrapper " >
+          <div class="ui pagination small menu" ><a data-gotopage="0" href="#"
+              class="item disabled" ><i class="tc-left icon"
+                ></i></a>
+            <div class="active item center aligned" ><a href="#"
+                ><span ><span
+                    >Trang</span><span >
+                    &nbsp;</span></span><span >1</span><span class="total"
+                  ><span > / </span><span
+                    >1</span></span></a>
+              <div class="hide" >
+                <div class="ui small action input" ><input type="text"
+                    style="width:40px;border-width:0;padding-left:5px;padding-right:5px;text-align:center;"
+                    ><button class="ui small teal right labeled icon button"
+                    style="background:#ddd;color:#555;padding-left:10px !important;padding-right:45px !important;"
+                    ><i class="tc-arrowright icon"
+                      style="background-color:#3498db;color:#fff;margin-top:0 !important;"
+                      ></i><span
+                      >/&nbsp;</span><span
+                      >1</span></button></div>
+              </div>
+            </div><a href="#" data-gotopage="2" class="item disabled" ><i
+                class="tc-right icon" ></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tcquerytaglist" ></div>
+    <div style="clear:both;" ></div>
+  </div>
+  <div class="filterbarfull filterbar filterbarhide "  style="top: 99px; left: 118.703px;">
+    <form class="ui form" ><span ></span>
+      <table width="100%" cellpadding="10" class="" >
+        <tbody>
+          <tr >
+            <td style="text-align:right;" ><label >Từ
+                khóa</label></td>
+            <td >
+              <div class="field small" ><input type="text" name="keyword" value=""
+                  ></div>
+            </td>
+          </tr>
+          <tr >
+            <td >Văn phòng làm việc</td>
+            <td >
+              <div class="ui dropdown search selection fluid   filterbarempty" ><input
+                  class="search" autocomplete="off" tabindex="0">
+                <div class="text" >Tất cả</div><i class="dropdown icon"
+                  ></i>
+                <div class="menu"  tabindex="-1">
+                  <div class="item active selected" data-value="" >Tất cả</div>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr >
+            <td >Phòng ban</td>
+            <td >
+              <div class="ui dropdown search selection fluid   filterbarempty" ><input
+                  class="search" autocomplete="off" tabindex="0">
+                <div class="text" >Tất cả</div><i class="dropdown icon"
+                  ></i>
+                <div class="menu"  tabindex="-1">
+                  <div class="item active selected" data-value="" >Tất cả</div>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr >
+            <td >Trạng thái</td>
+            <td >
+              <div class="ui dropdown search selection fluid   filterbarempty" ><input
+                  class="search" autocomplete="off" tabindex="0">
+                <div class="text" >Tất cả</div><i class="dropdown icon"
+                  ></i>
+                <div class="menu"  tabindex="-1">
+                  <div class="item active selected" data-value="" >Tất cả</div>
+                  <div class="item" data-value="1" >Có hiệu lực</div>
+                  <div class="item" data-value="3" >Vô hiệu lực</div>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr >
+            <td >Cấp bậc</td>
+            <td >
+              <div class="ui dropdown search selection fluid   filterbarempty" ><input
+                  class="search" autocomplete="off" tabindex="0">
+                <div class="text" >Tất cả</div><i class="dropdown icon"
+                  ></i>
+                <div class="menu"  tabindex="-1">
+                  <div class="item active selected" data-value="" >Tất cả</div>
+                  <div class="item" data-value="100" >Mới tốt nghiệp / Thực
+                    tập</div>
+                  <div class="item" data-value="0" >Nhân viên</div>
+                  <div class="item" data-value="60" >Trưởng nhóm / Giám sát
+                  </div>
+                  <div class="item" data-value="50" >Phó phòng</div>
+                  <div class="item" data-value="51" >Trợ lý quản lý cửa hàng
+                  </div>
+                  <div class="item" data-value="10" >Trưởng phòng</div>
+                  <div class="item" data-value="11" >Quản lý cửa hàng</div>
+                  <div class="item" data-value="7" >Phó giám đốc</div>
+                  <div class="item" data-value="5" >Giám đốc</div>
+                  <div class="item" data-value="4" >Giám đốc điều hành</div>
+                  <div class="item" data-value="2" >Phó chủ tịch</div>
+                  <div class="item" data-value="1" >Chủ tịch</div>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr >
+            <td >Loại hình công việc</td>
+            <td >
+              <div class="ui dropdown search selection fluid   filterbarempty" ><input
+                  class="search" autocomplete="off" tabindex="0">
+                <div class="text" >Tất cả</div><i class="dropdown icon"
+                  ></i>
+                <div class="menu"  tabindex="-1">
+                  <div class="item active selected" data-value="" >Tất cả</div>
+                  <div class="item" data-value="0" >Nhân viên chính thức</div>
+                  <div class="item" data-value="1" >Bán thời gian</div>
+                  <div class="item" data-value="3" >Thử việc</div>
+                  <div class="item" data-value="5" >Làm thêm ngoài giờ</div>
+                  <div class="item" data-value="7" >Nhân viên thời vụ</div>
+                  <div class="item" data-value="9" >Làm dự án</div>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr >
+            <td colspan="2" ><button class="ui fluid blue small button" type="button"
+                >Tìm kiếm</button></td>
+          </tr>
+          <tr >
+            <td colspan="2" style="text-align:center;" ><a href="#"
+                >Đóng</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </div>
+  <div style="padding-top: 0px; padding-bottom: 0px; display: block; min-height: 874px;" class="ui segment tc-scrolled"
+    >
+    <table id="employeetable" style="margin:0;"
+      class="tctable ui small unstackable very basic  selectable table scrollbar undefined" >
+      <thead >
+        <tr >
+          <th class="collapsing" colspan="1" >
+            <div class="ui checkbox checkbox-action all"
+              style="vertical-align:middle;font-size:11px;text-transform:none;" ><input
+                type="checkbox"  tabindex="0" class="hidden"><label></label></div>
+          </th>
+          <th ><a class="sortable mytip" href="javascript:(void(0))" data-sortby="id"
+              data-nameorigin="SID"  data-hasqtip="0" oldtitle="System ID"
+              title="">SID</a></th>
+          <th ></th>
+          <th >Tên</th>
+          <th >Văn phòng làm việc</th>
+          <th >Cấp bậc</th>
+          <th ><span >Loại hình công việc</span><span
+              >&nbsp;</span></th>
+          <th >Email</th>
+          <th >ID Nội bộ</th>
+          <th class="col_status" >Trạng thái</th>
+          <th class="collapsing" >Người tạo</th>
+          <th class="col_datetime" >Ngày tạo</th>
+          <th ></th>
+        </tr>
+      </thead>
+      <tbody >
+        <tr >
+          <td class="collapsing" >
+            <div class="ui checkbox checkbox-action disabled" style="font-size:11px;"
+              ><input type="checkbox" value="18535"
+                 tabindex="0" class="hidden"><label></label></div>
+          </td>
+          <td ><a href="#employee/detail/18535" class="mytip"
+               data-hasqtip="2" oldtitle="Xem thông tin chi tiết" title="">18535</a>
+          </td>
+          <td class="collapsing" ><a href="#employee/detail/18535"
+              ><img class="cellavatar" style="width:32px;height:32px;"
+                src="https://api.teamcrop.com/v1/photoavatar/t/e699ed/3a162/40.jpg" 
+                data-react-checksum="-814600215"></a></td>
+          <td ><a href="#employee/detail/18535" class="mytip"
+               data-hasqtip="3" oldtitle="Xem thông tin chi tiết" title=""><strong
+                >nguyen tuan</strong></a><span class="ui mini label orange"
+              style="margin-left:5px;" >Administrator</span><br
+              ><span ><span
+                ></span><span > </span><span
+                style="color:#999;" >@</span><span
+                > </span><span
+                ></span></span></td>
+          <td ></td>
+          <td >Nhân viên</td>
+          <td >Nhân viên chính thức</td>
+          <td ><span
+              >minh.nt2136@sinhvien.hoasen.edu.vn</span><br
+              ><span >091643463</span></td>
+          <td ></td>
+          <td ><span class="ui small label simple green"
+              >Có hiệu lực</span></td>
+          <td >nguyen tuan</td>
+          <td ><span class="" title="23:17, 14/04/2019"
+              >23:17, Hôm qua</span></td>
+          <td class="collapsing" ><span ><a
+                href="#employee/edit/18535" style="padding:0 5px 0 5px;" title="Nhấn vào đây để cập nhật dữ liệu"
+                class="" ><small
+                  >SỬA</small></a><span 
+                style="display: none;"><a style="color:grey;padding:0 5px 0 5px;cursor:pointer;"
+                  title="Nhấn vào đây để xóa dòng dữ liệu này.." class=""
+                  ><small
+                    >XÓA</small></a></span></span></td>
+        </tr>
+      </tbody>
+      <tfoot >
+        <tr >
+          <th class="collapsing" colspan="1" >
+            <div class="ui checkbox checkbox-action all"
+              style="vertical-align:middle;font-size:11px;text-transform:none;" ><input
+                type="checkbox"  tabindex="0" class="hidden"><label></label></div>
+          </th>
+          <th colspan="7" ><strong style="margin-right:1em;"
+              ><span >Đã chọn</span><span
+                >&nbsp;</span><span >0</span><span
+                >&nbsp;</span><span >phần
+                tử</span></strong><select
+              style="vertical-align:middle;min-height:0 !important;height:30px;margin-right:5px;"
+              class="ui small selection dropdown" >
+              <option value="" >--Chọn hành động--</option>
+              <option value="1" >Có hiệu lực</option>
+              <option value="3" >Vô hiệu lực</option>
+              <option value="5" >Xóa</option>
+            </select><a class="ui teal button disabled"
+              style="vertical-align:middle;height:30px;line-height:30px;padding:0 10px;font-size:1em;"
+              >Thực hiện</a></th>
+          <th colspan="6" class="right aligned" >
+            <div ><a class="ui mini button labeled icon teal" href="#"
+                ><i class="icon tc-download"
+                  ></i><span >Xuất dữ
+                  liệu</span><span ><span >
+                    (</span><span >1</span><span
+                    > </span><span
+                    >dòng</span><span
+                    >)</span></span></a>
+              <div ></div>
+            </div>
+          </th>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+</div>
