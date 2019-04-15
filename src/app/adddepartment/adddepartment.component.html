@@ -39,7 +39,7 @@
     <div class="field wide" >
     <label >Thuộc phòng ban</label>
     <mat-form-field>
-        <mat-select  placeholder="Transaction Type" formControlName="parent_id">
+        <mat-select  placeholder="Transaction Type" formControlName="departments">
           <mat-option *ngFor="let department of departments?.docs" value="{{ department?._id }}">{{ department?.title }}</mat-option>
         </mat-select>
       </mat-form-field>

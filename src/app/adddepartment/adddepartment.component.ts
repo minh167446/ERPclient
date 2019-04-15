@@ -58,7 +58,7 @@ export class AdddepartmentComponent implements OnInit {
     ).subscribe(data => {
       console.log(data);
     });
-    // window.location.href = "/department";
+    window.location.href = "/department";
     // data['success'] ? this.router.navigate(['department'])
     //         .then(() => this.data.success(data['message']))
     //         .catch(error => this.data.error(error))

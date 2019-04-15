@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http'; 
+import { HttpClientModule } from '@angular/common/http';
 import { RegisterComponent } from './register/register.component';
 import { DepartmentComponent } from './department/department.component';
 import { RouterModule, Routes } from '@angular/router';
@@ -55,9 +55,9 @@ const appRoutes: Routes = [
   {
     path: 'add_employee',
     component: AddemployeeComponent
-  } 
+  }
   ];
-  
+
 @NgModule({
   declarations: [
     AppComponent,

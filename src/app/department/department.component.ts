@@ -16,6 +16,7 @@ export class DepartmentComponent implements OnInit {
       const data = await this.http.get(
         'http://localhost:3000/api/departments'
       ).subscribe(
+        // res=>{console.dir(this.departments);}
         res=>this.departments = res
     );
       // data['success'] ? (this.departments = data['departments']) : this.data.error(data['message']);

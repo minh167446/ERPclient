@@ -179,8 +179,7 @@
       </table>
     </form>
   </div>
-  <div style="padding-top: 0px; padding-bottom: 0px; display: block; min-height: 874px;" class="ui segment tc-scrolled"
-    >
+  <div style="padding-top: 0px; padding-bottom: 0px; display: block; min-height: 874px;" class="ui segment tc-scrolled">
     <table id="employeetable" style="margin:0;"
       class="tctable ui small unstackable very basic  selectable table scrollbar undefined" >
       <thead >
@@ -208,7 +207,7 @@
         </tr>
       </thead>
       <tbody >
-        <tr >
+        <tr *ngFor="let employee of employees?.docs">
           <td class="collapsing" >
             <div class="ui checkbox checkbox-action disabled" style="font-size:11px;"
               ><input type="checkbox" value="18535"
@@ -219,11 +218,11 @@
           </td>
           <td class="collapsing" ><a href="#employee/detail/18535"
               ><img class="cellavatar" style="width:32px;height:32px;"
-                src="https://api.teamcrop.com/v1/photoavatar/t/e699ed/3a162/40.jpg" 
+                src="https://api.teamcrop.com/v1/photoavatar/t/e699ed/3a162/40.jpg"
                 data-react-checksum="-814600215"></a></td>
           <td ><a href="#employee/detail/18535" class="mytip"
                data-hasqtip="3" oldtitle="Xem thông tin chi tiết" title=""><strong
-                >nguyen tuan</strong></a><span class="ui mini label orange"
+                >{{ employee?.fullname }}</strong></a><span class="ui mini label orange"
               style="margin-left:5px;" >Administrator</span><br
               ><span ><span
                 ></span><span > </span><span
@@ -234,8 +233,8 @@
           <td >Nhân viên</td>
           <td >Nhân viên chính thức</td>
           <td ><span
-              >minh.nt2136@sinhvien.hoasen.edu.vn</span><br
-              ><span >091643463</span></td>
+              >{{ employee?.email }}</span><br
+              ><span >{{ employee?.phone }}</span></td>
           <td ></td>
           <td ><span class="ui small label simple green"
               >Có hiệu lực</span></td>
@@ -245,7 +244,7 @@
           <td class="collapsing" ><span ><a
                 href="#employee/edit/18535" style="padding:0 5px 0 5px;" title="Nhấn vào đây để cập nhật dữ liệu"
                 class="" ><small
-                  >SỬA</small></a><span 
+                  >SỬA</small></a><span
                 style="display: none;"><a style="color:grey;padding:0 5px 0 5px;cursor:pointer;"
                   title="Nhấn vào đây để xóa dòng dữ liệu này.." class=""
                   ><small
@@ -260,7 +259,7 @@
                 type="checkbox"  tabindex="0" class="hidden"><label></label></div>
           </th>
           <th colspan="7" ><strong style="margin-right:1em;"
-              ><span >Đã chọn</span><span
+              ><span >Đã chọn </span><span
                 >&nbsp;</span><span >0</span><span
                 >&nbsp;</span><span >phần
                 tử</span></strong><select
